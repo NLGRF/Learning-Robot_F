@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180513 02:58:35.227" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\Users\A6654\Desktop\L_RF\test.robot" id="s1" name="Test">
+<kw type="setup" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<status status="PASS" endtime="20180513 02:58:35.342" starttime="20180513 02:58:35.342"></status>
+</kw>
+<test id="s1-t1" name="click Tags">
+<kw type="setup" name="op Browser">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180513 02:58:35.342" level="INFO">Opening browser 'gc' to base url 'https://pantip.com/'.</msg>
+<status status="PASS" endtime="20180513 02:58:44.128" starttime="20180513 02:58:35.342"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+</arguments>
+<status status="PASS" endtime="20180513 02:58:44.129" starttime="20180513 02:58:44.128"></status>
+</kw>
+<status status="PASS" endtime="20180513 02:58:44.129" starttime="20180513 02:58:35.342"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="main-body-content"]/div[1]/div/div/div[2]/ul[1]/li[3]/a</arg>
+</arguments>
+<msg timestamp="20180513 02:58:44.130" level="INFO">Clicking element '//*[@id="main-body-content"]/div[1]/div/div/div[2]/ul[1]/li[3]/a'.</msg>
+<status status="PASS" endtime="20180513 02:58:44.580" starttime="20180513 02:58:44.130"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>https://pantip.com/tags</arg>
+</arguments>
+<msg timestamp="20180513 02:58:44.586" level="INFO">Current location is 'https://pantip.com/tags'.</msg>
+<status status="PASS" endtime="20180513 02:58:44.587" starttime="20180513 02:58:44.581"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180513 02:58:47.797" starttime="20180513 02:58:44.587"></status>
+</kw>
+<status status="PASS" endtime="20180513 02:58:47.797" critical="yes" starttime="20180513 02:58:35.342"></status>
+</test>
+<kw type="teardown" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Goodbye!!!</arg>
+</arguments>
+<status status="PASS" endtime="20180513 02:58:47.797" starttime="20180513 02:58:47.797"></status>
+</kw>
+<status status="PASS" endtime="20180513 02:58:47.797" starttime="20180513 02:58:35.230"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
